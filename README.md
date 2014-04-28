@@ -2,29 +2,29 @@
 
 Cuevana Storm desktop app based in peerflix module, packaged with node-webkit
 
-#### Build
-
-- Install dependencies.
+#### Install
 
 `npm install`
 
-- Install NodeWebkit. It is not listed as a dependency since you might already have installed it globally.
-
-`npm install nodewebkit@0.9.2`
-
-- You'll also need to use a version of ffmpegsumo that can play videos/audio correctly. There's one packed in the repository, under `ffmpegsumo/**/*`. Pick the one corresponding to your platform and copy to nodewebkit's folder.
-
-`cp ffmpegsumo/YOUR_PLATFORM/* node_modules/nodewebkit/nodewebkit/`
-
-- Optionally, and only if you plan on modifying the code, you have to run `gulp`. It will watch for file changes and automatically compile less into css, and some other stuff. **Not neccessary nor recommended for testers.**
-
 #### Run
 
-`/path/to/nodewebkit . --debug`
+`npm start`
 
-For instance, if you followed Build steps to the letter:
+#### Build
 
-`node_modules/nodewebkit/nodewebkit/nw . --debug`
+Use this to build the application executable.
+
+`npm run build` will build for your current platform.
+
+`npm run build-all` will build for all platforms.
+
+#### Developers
+
+`npm run compile` will compile less and update html references.
+
+`npm run watcher` will automatically watch for file changes and compile when needed.
+
+When the app is launched with `npm start`, it runs in `--debug` mode. Press `F11` to reload or `F12` to open Developers Tools (console).
 
 #### Comments
 
