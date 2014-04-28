@@ -668,7 +668,7 @@ var Storm = function() {
 
 			// Title
 			item.find('.title').html(data[i].name);
-			item.find('.subtitle').html("X Episodes to watch");
+			//item.find('.subtitle').html("X Episodes to watch");
 
 			// Image
 			item.find('img').attr('src', data[i].data.cover_url).on('error', function() {
